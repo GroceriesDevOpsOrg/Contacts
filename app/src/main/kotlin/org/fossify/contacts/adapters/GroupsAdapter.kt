@@ -81,7 +81,7 @@ class GroupsAdapter(
         bindViewHolder(holder)
     }
 
-    override fun getItemCount() = groups.size
+    override fun getItemCount() = 0 // groups.size TODO: Disabled contacts count for now, as we are not showing them in the list. Change this when we decide how to handle them in the UI
 
     private fun getItemWithKey(key: Int): Group? = groups.firstOrNull { it.id!!.toInt() == key }
 
