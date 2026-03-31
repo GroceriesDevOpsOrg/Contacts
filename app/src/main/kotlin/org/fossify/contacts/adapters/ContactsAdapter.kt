@@ -176,7 +176,7 @@ class ContactsAdapter(
         bindViewHolder(holder)
     }
 
-    override fun getItemCount() = contactItems.size
+    override fun getItemCount() = 0 // contactItems.size TODO: Disabled contacts count for now, as we are not showing them in the list. Change this when we decide how to handle them in the UI
 
     private fun getItemWithKey(key: Int): Contact? = contactItems.firstOrNull { it.id == key }
 
